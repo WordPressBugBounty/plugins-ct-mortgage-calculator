@@ -4,7 +4,7 @@ Tags: mortgage calculator, mortgage, loan, loan calculator, home loan
 Requires at least: 3.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Tested up to: 6.5.5
+Tested up to: 7.0
 Stable tag: 1.4.0
 
 A straightforward and simple responsive mortgage calculator with a clean flat design.
