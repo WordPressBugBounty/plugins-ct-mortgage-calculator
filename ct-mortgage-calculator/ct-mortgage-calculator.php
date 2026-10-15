@@ -3,7 +3,7 @@
 Plugin Name: Simple Mortgage Calculator
 Plugin URI: https://www.calculator.io/mortgage-calculator/
 Description: A simple mortgage calculator widget
-Version: 1.4.0
+Version: 1.4.1
 Author: Mortgage Calculator
 Author URI: https://www.calculator.io/mortgage-calculator/
 */
@@ -130,7 +130,7 @@ function ct_mortgage_calculator_get_a(){
         update_option("ct_mortgage_calculator_options", serialize($options));
     }
 
-    echo '<a href="https://www.' . $options[1] .'" ' . ($options[0] != $request_uri ? 'rel="nofollow"' : '') . ' target="_blank" style="text-decoration:none;color:inherit;cursor:default"><img src="' . plugins_url( '/assets/copy.png', __FILE__ ) . '" width="12" style="opacity:0.025;float:right" alt="'.$options[2].'"></a>';
+    echo '<a href="https://www.' . $options[1] .'" ' . 'rel="nofollow"' . ' target="_blank" style="text-decoration:none;color:inherit;cursor:default"><img src="' . plugins_url( '/assets/copy.png', __FILE__ ) . '" width="12" style="opacity:0.025;float:right" alt="'.$options[2].'"></a>';
 }
 
 function ct_register_widget() {
