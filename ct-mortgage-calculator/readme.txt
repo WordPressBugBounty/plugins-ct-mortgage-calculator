@@ -1,11 +1,11 @@
 === Simple Mortgage Calculator ===
 Contributors: rmcalculator
 Tags: mortgage calculator, mortgage, loan, loan calculator, home loan
-Requires at least: 3.3
+Requires at least: 5.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tested up to: 7.1
-Stable tag: 1.4.1
+Stable tag: 1.4.2
 
 A straightforward and simple responsive mortgage calculator with a clean flat design.
 
@@ -25,6 +25,11 @@ A straightforward and simple responsive mortgage calculator with a clean flat de
 2. The Mortgage Calculator monthly payment calculation result.
 
 == Changelog ==
+
+= 1.4.2 =
+* Security: escape all output; the widget title and currency are now sanitized when saved and escaped when printed.
+* Security: shortcode field labels are escaped inside the inline focus/blur handlers.
+* Text domain changed to the plugin slug; internal functions and the widget class use a unique prefix (saved widgets are unaffected).
 
 = 1.4.1 =
 * Tested with WordPress 7.1. Outbound credit links now carry rel="nofollow".
